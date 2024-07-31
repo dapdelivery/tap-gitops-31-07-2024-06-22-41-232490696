@@ -1,0 +1,15 @@
+---
+tap_install:
+  secrets:
+    eso:
+      vault:
+        server: http://3.16.157.28:8200
+        namespace: ""
+        auth:
+          kubernetes:
+            mountPath: auto-gke-tgejfqwkxu-1
+            role: auto-gke-tgejfqwkxu-1--tap-install-secrets
+      remote_refs:
+        tap_sensitive_values:
+          sensitive_tap_values_yaml:
+            key: secret/dev/auto-gke-tgejfqwkxu-1/tap/sensitive-values.yaml
